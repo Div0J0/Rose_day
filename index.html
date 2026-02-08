@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
+    <title>My Isha</title>
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@700&family=Poppins:wght@600&display=swap" rel="stylesheet">
+</head>
+<body>
+
+    <audio id="music-sad" loop>
+        <source src="sad.mp3" type="audio/mpeg">
+    </audio>
+    <audio id="music-happy" loop>
+        <source src="happy.mp3" type="audio/mpeg">
+    </audio>
+
+    <div id="overlay">
+        <div class="envelope">
+            <h1>💌</h1>
+            <p>You have a message cutieee...</p>
+            <button onclick="startExperience()">Tap to Open</button>
+        </div>
+    </div>
+
+    <div id="rain-container"></div>
+
+    <div class="main-card">
+        <h1 class="header">To: <span class="highlight">My Queen 👑</span></h1>
+
+        <div id="card-sad">
+            <div class="photo-frame sad-frame">
+                <img id="img-sad" src="Isha sad.jpeg" alt="Sad Face">
+            </div>
+            
+            <p class="text-content">I missed Rose Day.<br>I will bring you bondi ka ladoo 🍪<br>Please forgive me?</p>
+            
+            <div class="btn-container">
+                <button id="btn-yes" onclick="acceptApology()">Chalo maaf kiya 😏</button>
+                <button id="btn-no">Noooo 😤</button>
+            </div>
+        </div>
+
+        <div id="card-happy" class="hidden">
+            <div class="photo-frame happy-frame">
+                <img id="img-happy" src="Isha happy.jpeg" alt="Happy Face">
+            </div>
+            
+            <h2 class="love-text">YAAAY! ❤️</h2>
+            <p class="text-content">Pata hi tha maaf kar degi</p>
+            <p class="sub-text">Warning: Infinite Love Loading...</p>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
